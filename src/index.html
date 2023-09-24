@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamental Front End Web Development</title>
+  </head>
+  <body>
+    <header>
+      <app-bar></app-bar>
+    </header>
+    <main>
+      <section id="searchSection">
+        <div class="gradient"></div>
+        <search-bar></search-bar>
+      </section>
+      <section id="contentSection">
+        <div class="search-result-tag hidden" id="searchResultTag">
+          <h1>Hasil Pencarian</h1>
+          <div class="custom-underline"></div>
+        </div>
+        <movie-list></movie-list>
+        <div class="popular-movie-list-container" id="popMovieListContainer">
+          <h1>Rekomendasi Film</h1>
+          <div class="custom-underline"></div>
+          <div class="movies-list" id="movieList"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

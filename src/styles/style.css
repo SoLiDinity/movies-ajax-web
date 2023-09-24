@@ -1,0 +1,150 @@
+:root{
+    --text-color: #ffffff;
+    --background-color: #1a1c29;
+    --primary: #d7c15d;
+    --secondary: #273057;
+    --accent: #bf4545;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    z-index: 4;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding-bottom: 5rem;
+}
+
+main, .popular-movie-list-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#searchSection{
+    height: 70vh;
+    background-image: url('https://wallpaperswide.com/download/avatar_2009_movie_3-wallpaper-1366x768.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(28, 28, 43, 0.5), var(--background-color));
+    position: absolute;
+    z-index: 1;
+}
+
+search-bar{
+    margin: 5rem 1rem 3rem;
+    z-index: 3;
+}
+
+.search-result-tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 1.5rem 0 .5rem;
+    color: var(--text-color);
+}
+
+.custom-underline{
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.search-movie-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: rgb(255, 255, 255, 0.45);
+    margin-bottom: 5rem;
+}
+
+movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    margin: 0 2rem;
+}
+
+.movies-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    margin: 0 2rem;
+}
+
+.movie{
+    width: 12vw;
+    min-width: 160px;
+    background-color: var(--secondary);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: .5rem .5rem;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.movie img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie .rating{
+    display: flex;
+    align-items: baseline;
+}
+
+.movie h3, .movie p{
+    margin-top: .5rem;
+}
+
+.movie p{
+    margin-left: .25rem;
+}
+
+@media (max-width: 430px) {
+    .movie{
+        width: 100%;
+    }
+}
